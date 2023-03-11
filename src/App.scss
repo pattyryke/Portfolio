@@ -42,22 +42,24 @@ $size: 25vmin;
 #tvcontainer {
   display: flex;
   overflow: visible;
-  height: 70vh;
-  margin-top: 2%;
-  margin-left: 1.635%;
+  height: 71vh;
+  margin-top: 1%;
   scale: 80%;
   background-color: rgba(31, 31, 31);
   @include roundedEdgeObject();
   border-radius: 40px / 50px;
-  @include centeredObjects();
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   z-index: 1;
 }
 ul {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  justify-content: flex-start;
+}
+li {
+  display: flex;
+  flex-direction: row;
 }
 
 #fullscreen {
